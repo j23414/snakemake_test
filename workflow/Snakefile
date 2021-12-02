@@ -1,0 +1,15 @@
+# === Basic Example
+#
+#include: 'rules/mod1.smk'
+#include: 'rules/mod2.smk'
+#
+#rule all:
+#    input: 'b.txt'
+
+# === Parameter Example
+include: 'rules/augur.smk'
+
+#sequence_ch = config["sequence"]  # Nope, not passed to the sub rules. Figure out scope
+
+rule all:
+    input: final_input = rules.index.output.indexed
