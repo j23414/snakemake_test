@@ -2,6 +2,8 @@
 
 Explore snakemake configs, expecially [writing workflows](https://snakemake.readthedocs.io/en/stable/snakefiles/writing_snakefiles.html).
 
+Rule inheritance in Snakemake v6: https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#rule-inheritance
+
 ## Create a basic example
 
 Snakemake mentions `subworkflows` and `include`. The former is executed as a separate workflow before the main script. The later adds the rules to the main script. I picked the later.
